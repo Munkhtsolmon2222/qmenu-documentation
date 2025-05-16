@@ -7215,6 +7215,7 @@ __metadata:
     docusaurus-plugin-openapi-docs: ^4.3.4
     docusaurus-theme-openapi-docs: 4.3.4
     lucide-react: ^0.475.0
+    lunr-languages: ^1.14.0
     postcss: ^8.5.3
     postman-code-generators: ^1.14.1
     prettier-plugin-tailwindcss: ^0.6.11
@@ -10294,7 +10295,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lunr-languages@npm:^1.4.0":
+"lunr-languages@npm:^1.14.0, lunr-languages@npm:^1.4.0":
   version: 1.14.0
   resolution: "lunr-languages@npm:1.14.0"
   checksum: 05dd6338af6897932f64f9cb735d5b48f9905d892499b22a3f3abc279b2ac71a6bce0fdfe59c01464c6ad3f8e44e2956ba0637f092535239793bbadf4540e72d

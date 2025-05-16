@@ -1,6 +1,5 @@
 import Layout from '@theme/Layout'
 import Heading from '@theme/Heading'
-import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
 import HomepageFeatures from './Features'
@@ -22,23 +21,15 @@ function HomepageHeader() {
     >
       <div className='container'>
         <Heading as='h1' className='mb-4 text-2xl font-bold md:text-3xl lg:text-5xl'>
-          {siteConfig.title}
         </Heading>
 
         <p className='mb-4 text-lg md:text-xl lg:text-2xl'>
           <span className='mb-1 block'>{siteConfig.tagline}</span>
-          <Link
-            href='https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template'
-            className='text-blue-700 dark:text-green-700'
-          >
-            Please read README.md for more about project information
-          </Link>
+        
         </p>
 
         <Button asChild>
-          <Link to='/docs/intro' className='hover:text-primary-foreground'>
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+       
         </Button>
       </div>
     </header>
@@ -50,7 +41,7 @@ export default function Home({ homePageBlogMetadata, recentPosts }) {
 
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Qmenu Guide`}
       description='Description will go into a meta tag in <head />'
     >
       <HomepageHeader />

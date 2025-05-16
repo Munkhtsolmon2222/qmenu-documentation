@@ -1,60 +1,51 @@
-const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and used to get your
-        website up and running quickly.
-      </>
-    )
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your
-        docs into the <code>docs</code> directory.
-      </>
-    )
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can be extended while
-        reusing the same header and footer.
-      </>
-    )
-  }
-]
-
-function Feature({ Svg, title, description }) {
-  return (
-    <div>
-      <div className='text--center'>
-        <Svg className='mx-auto h-52 w-52' role='img' />
-      </div>
-      <div className='text--center padding-horiz--md'>
-        <p className='mb-2 text-xl font-bold'>{title}</p>
-        <p className='mx-auto max-w-sm'>{description}</p>
-      </div>
-    </div>
-  )
-}
-
 export default function HomepageFeatures() {
+  const cards = [
+    {
+      title: "Нэвтрэх ба эрхийн тохиргоо",
+      path: "/docs/login/1"
+    },
+    {
+      title: "Бүтээгдэхүүн ба цэсийн удирдлага",
+      path: "/docs/products/1"
+    },
+    {
+      title: "QR болон холбоос",
+      path: "/docs/qr/1"
+    },
+    {
+      title: "Касс ба төлбөр",
+      path: "/docs/pos/1"
+    },
+    {
+      title: "Захиалга ба ширээ",
+      path: "/docs/order/1"
+    },
+    {
+      title: "Заал, гал тогооны удирдлага",
+      path: "/docs/kds/1"
+    },
+    {
+      title: "Тайлан ба гүйлгээ",
+      path: "/docs/report-and-transaction/1"
+    },
+    {
+      title: "Санал хүсэлт",
+      path: "/docs/feedback/1"
+    }
+  ]
+
   return (
-    <section className='py-10'>
-      <div className='mx-auto max-w-7xl'>
-        <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto p-4 my-20">
+      {cards.map((card, index) => (
+        <a key={index} href={card.path}> 
+          <div className="overflow-hidden border border-gray-200 rounded-lg bg-white shadow-sm">
+            <div className="h-1 bg-black" />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-900">{card.title}</h3>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
   )
 }

@@ -1,0 +1,8 @@
+{
+  "label": "QR болон холбоос",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Here is the description."
+  }
+}

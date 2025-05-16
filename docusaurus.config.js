@@ -8,8 +8,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docusaurus Tailwind Shadcn/ui',
-  tagline: 'Templates Docusaurus with Tailwind CSS and Shadcn/ui',
+  title: 'гарын авлага',
+  tagline: 'Qmenu гарын авлага, Зааврууд, Шинэчлэлтүүд, болон API',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -41,13 +41,31 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template/tree/main',
-          docItemComponent: '@theme/ApiItem' // Derived from docusaurus-theme-openapi
+          docItemComponent: '@theme/ApiItem'
         },
-        blog: false,
+        blog: {
+          path: 'blog',
+          editLocalizedFiles: false,
+          blogTitle: 'Шинэчлэлтүүд',
+          blogDescription: 'Манай системийн өөрчлөлтүүд болон шинэчлэлтүүд',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'List blog',
+          routeBasePath: 'blog',
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**'
+          ],
+          postsPerPage: 6,
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
+          showReadingTime: true,
+          onUntruncatedBlogPosts: 'ignore',
+          editUrl:
+            'https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template/tree/main/',
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
+        },
         theme: { customCss: './src/css/custom.css' }
       })
     ]
@@ -58,46 +76,49 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: 'Docusaurus Tailwind Shadcn/ui',
-        logo: { alt: 'Docusaurus Tailwind Shadcn/ui Logo', src: 'img/logo.svg' },
+        title: 'Qmenu гарын авлага',
+        // logo: { alt: 'Qmenu logo', src: 'img/favicon.ico' },
         items: [
-          { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Tutorial' },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { label: 'Petstore API', position: 'left', to: '/docs/category/petstore-versioned-api' },
-          {
-            'href': 'https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template',
-            'position': 'right',
-            'className': 'header-github-link',
-            'aria-label': 'GitHub repository'
-          }
+          { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Зааврууд' },
+          { to: '/blog', label: 'Шинэчлэлтүүд', position: 'left' },
+          { label: 'API', position: 'left', to: '/docs/category/qmenu-api' },
         ]
       },
-      docs: { sidebar: { autoCollapseCategories: true, hideable: true } },
+      docs: { 
+        sidebar: { 
+          autoCollapseCategories: true, 
+          hideable: true
+        } 
+      },
       footer: {
         style: 'dark',
         links: [
-          { title: 'Docs', items: [{ label: 'Tutorial', to: '/docs/intro' }] },
           {
-            title: 'Community',
+            title: 'Бүтээгдэхүүн',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-              },
-              { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
-              { label: 'X', href: 'https://x.com/docusaurus' }
+              { label: 'Шийдлүүд', to: 'https://www.qmenu.mn/for-business#solution' },
+              { label: 'Үнийн санал', to: 'https://www.qmenu.mn/for-business/#pricing' },
+              { label: 'Интеграци', to: 'https://www.qmenu.mn/for-business/#products' },
+              { label: 'Түгээмэл асуултууд', to: 'https://www.qmenu.mn/for-business/#faq' }
             ]
           },
           {
-            title: 'More',
+            title: 'Компани',
             items: [
-              { label: 'Blog', to: '/blog' },
-              { label: 'GitHub', href: 'https://github.com/facebook/docusaurus' }
+              { label: 'Бидний тухай', to: 'https://www.qmenu.mn/for-business/' },
+              { label: 'Мэдлэг', to: 'https://www.qmenu.mn/for-business/#knowledge' },
+              { label: 'Холбоо барих', to: 'https://www.qmenu.mn/for-business/#contact' },
+              { label: 'Түншүүд', to: 'https://www.qmenu.mn/for-business/#partners' }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Docusaurus Tailwind Shadcn. Templates by <a href="https://github.com/namnguyenthanhwork" style="font-weight: bold;" target="_blank">Thành Nam Nguyễn</a>`
+        copyright: `Copyright © ${new Date().getFullYear()} QMenu. Бүх эрх хуулиар хамгаалагдсан.`
       },
       prism: {
         additionalLanguages: [
@@ -142,7 +163,7 @@ const config = {
         indexPages: true,
         docsRouteBasePath: '/docs',
         hashed: true,
-        language: ['en'],
+        language: ['ru', 'en'],
         highlightSearchTermsOnTargetPage: false,
         searchResultContextMaxLength: 50,
         searchResultLimits: 8,
@@ -160,39 +181,17 @@ const config = {
         id: 'openapi',
         docsPluginId: 'classic',
         config: {
-          // multiVersion
-          petstore_versioned: {
-            specPath: 'api-swagger/petstore.yaml',
-            outputDir: 'docs/petstore_versioned', // No trailing slash
+          qmenu: {
+            specPath: 'api-swagger/qmenu.yaml',
+            outputDir: 'docs/api',
             sidebarOptions: {
               groupPathsBy: 'tag',
               categoryLinkSource: 'tag'
             },
-            version: '2.0.0', // Current version
-            label: 'v2.0.0', // Current version label
-            baseUrl: '/docs/petstore_versioned/swagger-petstore-yaml', // Leading slash is important
-            downloadUrl:
-              'https://raw.githubusercontent.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template/main/api-swagger/petstore.yaml',
-            versions: {
-              '1.0.0': {
-                specPath: 'api-swagger/petstore-1.0.0.yaml',
-                outputDir: 'docs/petstore_versioned/1.0.0', // No trailing slash
-                label: 'v1.0.0',
-                baseUrl: '/docs/petstore_versioned/1.0.0/swagger-petstore-yaml', // Leading slash is important
-                downloadUrl:
-                  'https://raw.githubusercontent.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template/main/api-swagger/petstore-1.0.0.yaml'
-              }
-            }
+            downloadUrl: '/qmenu.yaml',
+            hideSendButton: false,
+            showSchemas: true
           }
-          // singleVersion
-          // petstore: {
-          //   specPath: 'api-swagger/petstore.yaml',
-          //   outputDir: 'docs/petstore',
-          //   sidebarOptions: { groupPathsBy: 'tag', categoryLinkSource: 'tag' },
-          //   downloadUrl: '/petstore.yaml',
-          //   hideSendButton: false,
-          //   showSchemas: true
-          // }
         }
       }
     ],
@@ -204,36 +203,8 @@ const config = {
         max: 1030,
         min: 640,
         steps: 2,
-        // Use false to debug, but it incurs huge perf costs
         disableInDev: true
       })
-    ],
-    [
-      './src/plugins/blog-plugin',
-      {
-        path: 'blog',
-        editLocalizedFiles: false,
-        blogTitle: 'Blog',
-        blogDescription: 'Blog description is here ...',
-        blogSidebarCount: 'ALL',
-        blogSidebarTitle: 'List blog',
-        routeBasePath: 'blog',
-        include: ['**/*.md', '**/*.mdx'],
-        exclude: [
-          '**/_*.{js,jsx,ts,tsx,md,mdx}',
-          '**/_*/**',
-          '**/*.test.{js,jsx,ts,tsx}',
-          '**/__tests__/**'
-        ],
-        postsPerPage: 6,
-        truncateMarker: /<!--\s*(truncate)\s*-->/,
-        showReadingTime: true,
-        onUntruncatedBlogPosts: 'ignore',
-        // Remove this to remove the "edit this page" links.
-        editUrl:
-          'https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template/tree/main/',
-        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
-      }
     ]
   ]
 }

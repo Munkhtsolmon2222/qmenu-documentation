@@ -312,6 +312,12 @@ div[class^='docItemContainer_'] article img {
   background-color: var(--openapi-code-orange);
 }
 
+.custom-logo {
+  width: 70;
+  height: 500px;
+}
+
+
 /* Tablet */
 @media screen and (max-width: 991px) {
   /* Search navbar local */

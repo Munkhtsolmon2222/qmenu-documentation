@@ -1,7 +1,7 @@
 ---
 slug: long-blog-post
 title: Long Blog Post
-image: https://res.cloudinary.com/thanhnam/image/upload/v1736787946/project/docusaurus-tailwind-shadcn-template/blog_vep2ri.jpg
+image: https://res.cloudinary.com/ds9r4eovz/image/upload/v1747294976/Untitled_design_4_j73pg8.png
 authors: [endi, yangshun]
 tags: [hello, docusaurus]
 ---
