@@ -1,7 +1,16 @@
 ---
 title: Config API
+sidebar_position: 8
 ---
 
-## Endpoints
+## GET `/v1/config`
 
-- **GET /v1/config** — Get config 
+Get environment configs.
+
+### Parameters
+
+_No parameters_
+
+### Responses
+
+#### 200 - 200 response

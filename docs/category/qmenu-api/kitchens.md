@@ -1,5 +1,6 @@
 ---
 title: Kitchens API
+sidebar_position: 7
 ---
 
 ## GET `/v1/kitchens`

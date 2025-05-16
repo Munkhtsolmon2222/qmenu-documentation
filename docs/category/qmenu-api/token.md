@@ -1,5 +1,6 @@
 ---
 title: Token API
+sidebar_position: 2
 ---
 
 ## POST `/v1/token`
