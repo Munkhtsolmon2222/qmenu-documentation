@@ -44,8 +44,7 @@ const config = {
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           showReadingTime: true,
           onUntruncatedBlogPosts: 'ignore',
-          editUrl:
-            'https://github.com/Uuganaab/qmenu-help',
+          editUrl: 'https://github.com/Uuganaab/qmenu-help',
           remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
         },
         theme: { customCss: './src/css/custom.css' }
@@ -60,22 +59,36 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: false
       },
       navbar: {
-        title: 'Qmenu гарын авлага',
-        // logo: { alt: 'Qmenu logo', src: 'img/favicon.ico' },
         items: [
-          { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Зааврууд' },
-          { to: '/blog', label: 'Шинэчлэлтүүд', position: 'left' },
-          { label: 'API', position: 'left', to: '/docs/category/qmenu-api' },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Заавар',
+            className: 'custom-navbar-item'
+          },
+          {
+            to: '/blog',
+            label: 'Шинэчлэлт',
+            position: 'left',
+            className: 'custom-navbar-item'
+          },
+          {
+            to: '/docs/category/qmenu-api',
+            label: 'API',
+            position: 'left',
+            className: 'custom-navbar-item'
+          }
         ]
       },
-      docs: { 
-        sidebar: { 
-          autoCollapseCategories: true, 
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
           hideable: true
-        } 
+        }
       },
       footer: {
         style: 'dark',
