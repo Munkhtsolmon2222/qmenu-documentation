@@ -1,9 +1,19 @@
 
-## 🚀 Getting Started
+# Qmenu Documentation
 
-If you're new to Qmenu, start with the [Getting Started Guide](docs/user-guide/getting-started.md). It walks you through creating your restaurant profile, adding menu items, and handling orders.
+Welcome to the official documentation repository for **Qmenu** — a modern and powerful restaurant management system. This repository serves as the primary source of technical and user documentation for Qmenu, designed to help restaurant owners, staff, and developers understand and utilize the full potential of our system.
 
-For developers looking to contribute or customize, refer to [Developer Installation](docs/developer-guide/installation.md).
+## 🧾 About Qmenu
+
+Qmenu is a comprehensive restaurant POS (Point of Sale) and management system tailored to the needs of restaurants, cafes, and food service businesses. With a sleek, user-friendly interface and robust backend, Qmenu streamlines order management, inventory tracking, sales reporting, and more.
+
+## 📚 Documentation Overview
+
+This repo contains:
+
+- **User Guide** – How to use Qmenu as a restaurant admin or staff member.
+- **Admin Guide** – For system administrators and restaurant owners.
+- **Technical Docs** – Developer setup, API references, and integration details.
 
 ## 📌 Key Features
 
