@@ -1,5 +1,5 @@
 ---
-title: API Models
+title: API
 sidebar_position: 9
 ---
 

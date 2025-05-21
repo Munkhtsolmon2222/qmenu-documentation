@@ -1,5 +1,5 @@
 ---
-title: Payments API
+title: Payments
 sidebar_position: 4
 ---
 

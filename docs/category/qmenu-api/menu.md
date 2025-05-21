@@ -1,5 +1,5 @@
 ---
-title: Menu API
+title: Menu
 sidebar_position: 5
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Token API
+title: Token
 sidebar_position: 2
 ---
 

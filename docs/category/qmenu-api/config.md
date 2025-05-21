@@ -1,5 +1,5 @@
 ---
-title: Config API
+title: Config
 sidebar_position: 8
 ---
 

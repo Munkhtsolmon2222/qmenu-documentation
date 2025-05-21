@@ -1,5 +1,5 @@
 ---
-title: Kitchens API
+title: Kitchens
 sidebar_position: 7
 ---
 
