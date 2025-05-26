@@ -33,10 +33,10 @@ export default function BlogPostItems({ items, component: BlogPostItemComponent 
                 <p className='mb-1 p-0 text-xl font-semibold'>{blog.content.metadata.title}</p>
               </Link>
 
-              <p className='mb-4 mt-2 line-clamp-2 dark:text-gray-400'>
+              <p className='mt-2 mb-4 line-clamp-2 dark:text-gray-400'>
                 {blog.content.metadata.description}
               </p>
-              <div className='my-2 flex flex-wrap items-center gap-2'>
+              {/* <div className='my-2 flex flex-wrap items-center gap-2'>
                 {blog.content.metadata.authors.map((author, index) => (
                   <Link
                     href={author.page.permalink}
@@ -61,16 +61,16 @@ export default function BlogPostItems({ items, component: BlogPostItemComponent 
                   <span className='mx-2'>•</span>
                   <span>{Math.ceil(blog.content.metadata.readingTime)} min read</span>
                 </div>
-              </div>
+              </div> */}
             </CardContent>
 
-            <CardFooter className='px-2'>
+            {/* <CardFooter className='px-2'>
               {blog.content.metadata.tags.length > 0 && (
                 <div className='blog-tags flex flex-wrap gap-2'>
                   <TagsListInline tags={blog.content.metadata.tags} />
                 </div>
               )}
-            </CardFooter>
+            </CardFooter> */}
           </Card>
         </div>
       ))}

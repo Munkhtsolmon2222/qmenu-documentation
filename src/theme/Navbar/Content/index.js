@@ -1,5 +1,5 @@
 import React from 'react'
-import { useThemeConfig, ErrorCauseBoundary } from '@docusaurus/theme-common'
+import { useThemeConfig, ErrorCauseBoundary, useColorMode } from '@docusaurus/theme-common'
 import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal'
 import NavbarItem from '@theme/NavbarItem'
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle'
@@ -34,10 +34,14 @@ ${JSON.stringify(item, null, 2)}`,
   )
 }
 function NavbarContentLayout({ left, right }) {
+  const { colorMode } = useColorMode()
+
+  const logoSrc = colorMode === 'light' ? '/img/logoLight.png' : '/img/logoEdited.png'
+
   return (
     <div className='navbar__inner'>
       <a href='/'>
-        <img className='titleLogo' src='/img/logoEdited.png' />
+        <img className='titleLogo' src={logoSrc} />
       </a>
       <div className='navbar__items'>{left}</div>
       <div className='navbar__items navbar__items--right'>{right}</div>

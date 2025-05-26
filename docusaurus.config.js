@@ -57,7 +57,7 @@ const config = {
     ({
       image: 'img/favicon.ico',
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: false
       },
