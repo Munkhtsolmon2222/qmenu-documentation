@@ -16,20 +16,20 @@
  */
 const sidebars = {
   tutorialSidebar: [
-      {
+    {
       type: 'category',
       label: 'Нэвтрэх ба эрхийн тохиргоо',
       items: ['login/1', 'login/2']
     },
     {
       type: 'category',
-      label: 'QR болон холбоос',
-      items: ['qr/1']
+      label: 'Бүтээгдэхүүн ба цэсийн удирдлага',
+      items: ['products/1', 'products/2', 'products/3', 'products/4']
     },
     {
       type: 'category',
-      label: 'Бүтээгдэхүүн ба цэсийн удирдлага',
-      items: ['products/1', 'products/2', 'products/3', 'products/4']
+      label: 'QR болон холбоос',
+      items: ['qr/1']
     },
     {
       type: 'category',
@@ -49,7 +49,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Тайлан ба гүйлгээ',
-      items: ['report-and-transaction/1', 'report-and-transaction/2', 'report-and-transaction/3', 'report-and-transaction/4']
+      items: [
+        'report-and-transaction/1',
+        'report-and-transaction/2',
+        'report-and-transaction/3',
+        'report-and-transaction/4'
+      ]
     },
     {
       type: 'category',
@@ -63,6 +68,6 @@ const sidebars = {
       dirName: 'category/qmenu-api'
     }
   ]
-};
+}
 
-export default sidebars;
+export default sidebars
