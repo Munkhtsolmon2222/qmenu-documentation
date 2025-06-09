@@ -19,41 +19,41 @@ const sidebars = {
       {
       type: 'category',
       label: 'Нэвтрэх ба эрхийн тохиргоо',
-      items: ['login/1', 'login/2']
+      items: ['login/1', 'login/2', 'login/3', 'login/4']
     },
     {
       type: 'category',
-      label: 'QR болон холбоос',
-      items: ['qr/1']
+      label: 'Касс',
+      items: ['qr/1', 'qr/2', 'qr/3', 'qr/4', 'qr/5', 'qr/6', 'qr/7']
     },
     {
       type: 'category',
-      label: 'Бүтээгдэхүүн ба цэсийн удирдлага',
+      label: 'Захиалга - Хувааж төлөх, ширээ шилжүүлэх',
       items: ['products/1', 'products/2', 'products/3', 'products/4']
     },
     {
       type: 'category',
-      label: 'Заал, гал, тогооны удирдлага',
+      label: 'Захиалга - Буцаалт хийх тухай',
       items: ['kds/1', 'kds/2', 'kds/3', 'kds/4', 'kds/5']
     },
     {
       type: 'category',
-      label: 'Захиалга ба ширээ',
+      label: 'Захиалга - Хөнгөлөлт тооцох тухай',
       items: ['order/1', 'order/2', 'order/3', 'order/4', 'order/5']
     },
     {
       type: 'category',
-      label: 'Касс ба төлбөр',
+      label: 'Захиалга - Татвар хураамж тооцох тухай',
       items: ['pos/1', 'pos/2', 'pos/3', 'pos/4']
     },
     {
       type: 'category',
-      label: 'Тайлан ба гүйлгээ',
+      label: 'Захиалгын мэдээлэл',
       items: ['report-and-transaction/1', 'report-and-transaction/2', 'report-and-transaction/3', 'report-and-transaction/4']
     },
     {
       type: 'category',
-      label: 'Санал хүсэлт',
+      label: 'Бүтээгдэхүүн шинээр нэмэх',
       items: ['feedback/1', 'feedback/2']
     }
   ],
