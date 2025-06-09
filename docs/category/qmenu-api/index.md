@@ -14,3 +14,6 @@ Welcome! Choose an API group below to view detailed endpoints and documentation:
 - [Callbacks](callbacks)
 
 Welcome to the QMenu API documentation. This section provides detailed information about the QMenu API endpoints, authentication, and usage examples.
+
+[ Base URL: dev-api.qrms.mn ]
+https://apidocs.qrms.mn/swagger.json

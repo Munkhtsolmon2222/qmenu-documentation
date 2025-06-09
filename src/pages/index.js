@@ -20,11 +20,11 @@ export default function Home({ homePageBlogMetadata, recentPosts }) {
                 to="/docs/login/1">
                  Гарын авлага →
               </Link>
-              <Link
+              {/* <Link
                 className="button button--secondary button--lg"
                 to="/docs/category/qmenu-api">
                 QMenu API →
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

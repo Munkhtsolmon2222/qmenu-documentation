@@ -16,7 +16,7 @@
  */
 const sidebars = {
   tutorialSidebar: [
-      {
+    {
       type: 'category',
       label: 'Нэвтрэх ба эрхийн тохиргоо',
       items: ['login/1', 'login/2', 'login/3', 'login/4']
@@ -49,7 +49,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Захиалгын мэдээлэл',
-      items: ['report-and-transaction/1', 'report-and-transaction/2', 'report-and-transaction/3', 'report-and-transaction/4']
+      items: [
+        'report-and-transaction/1',
+        'report-and-transaction/2',
+        'report-and-transaction/3',
+        'report-and-transaction/4'
+      ]
     },
     {
       type: 'category',
@@ -63,6 +68,6 @@ const sidebars = {
       dirName: 'category/qmenu-api'
     }
   ]
-};
+}
 
-export default sidebars;
+export default sidebars
